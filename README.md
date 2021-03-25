@@ -101,6 +101,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
+* **Nurul Nadzirin** - *Initial work* - [nurulnad](https://github.com/nurulnad)
 * **Mihaly Varadi** - *Migrating to GitHub* - [mvaradi](https://github.com/mvaradi)
 
 See also the list of [contributors](https://github.com/PDBe-KB/component-download-component/contributors) who participated in this project.
