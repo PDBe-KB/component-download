@@ -1,0 +1,53 @@
+.padding-small {
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+}
+
+.button {
+  width: 100%;
+}
+
+.label-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.label-tooltip .label-tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: white;
+  color: #0a0a0a;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 5px 3px 5px 3px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.label-tooltip .label-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.label-tooltip:hover .label-tooltip-text {
+  visibility: visible;
+}
+
+.download-icon {
+  font-size: 1.3em;
+}
+
+.download-icon:hover {
+  color: #00696f;
+  cursor: pointer;
+}

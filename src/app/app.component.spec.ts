@@ -1,11 +1,23 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {Component, Input} from '@angular/core';
+
+@Component({
+  selector: 'app-download',
+  styles: [''],
+  template: '<html></html>'
+})
+class DownloadComponent {
+  @Input() downloadModalData: any;
+  @Input() type: string;
+}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        DownloadComponent
       ],
     }).compileComponents();
   }));
@@ -16,16 +28,4 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'pdbe-kb-download-component'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('pdbe-kb-download-component');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to pdbe-kb-download-component!');
-  });
 });

@@ -1,0 +1,44 @@
+.mb {
+    padding-bottom: 35px;
+}
+.loading {
+    font-size:13px;
+}
+.fieldfont {
+    font-size: 0.875rem;
+}
+
+.cancel {
+  background-color: #7f7f7f;
+}
+
+.mat-radio-label-content {
+    padding-right: 10px !important;
+}
+
+.mat-dialog-actions {
+    margin-bottom:0px;
+}
+
+.margin-right-05 {
+    margin-right: 0.5em;
+}
+
+.errorStyle {
+    white-space: normal; 
+    width: 450px;
+    color: red;
+}
+
+.loadingBox {
+    font-weight: bold; 
+    font-size: 12px;
+    background-color: #e7f3fe;
+    padding: 15px 15px; 
+    margin-bottom: 10px;
+}
+
+.loadingUrl {
+    font-weight: normal; 
+    font-size: 12px;
+}

@@ -1,0 +1,30 @@
+<div [ngSwitch]="type">
+
+  <div *ngSwitchCase="'summary'">
+    <div class="label-tooltip" style="width:100%">
+      <button class="button padding-small" (click)="openDialog()"
+        onclick="gtag('event', 'click', {'event_category': 'download', 'event_label': 'mmcif', 'value': 'selected'})">
+        Download &nbsp;<i class="icon icon-functional" data-icon="="></i>
+      </button>
+      <span class="label-tooltip-text">
+        <i class="icon icon-functional download-icon" data-icon="="></i>
+        Click to download files
+      </span>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'gallery'">
+    <div class="label-tooltip">
+      <button style="color:green" (click)="openDialog()"
+        onclick="gtag('event', 'click', {'event_category': 'download', 'event_label': 'mmcif', 'value': 'selected'})">
+        <i class="icon icon-functional download-icon" data-icon="="></i>
+      </button>
+      <span class="label-tooltip-text">
+        <i class="icon icon-functional download-icon" data-icon="="></i>
+        Click to download files
+      </span>
+    </div>
+  </div>
+</div>
+
+
