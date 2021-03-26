@@ -16,8 +16,8 @@ The web component is used on PDBe-KB Aggregated Views of Proteins.
 
 Get the code and install dependencies
 ```
-git clone https://github.com/PDBe-KB/component-download-component.git
-cd component-download-component
+git clone https://github.com/PDBe-KB/component-download.git
+cd component-download
 npm i
 ```
 
