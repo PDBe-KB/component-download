@@ -5,9 +5,9 @@ PDBe-KB Download Component
 [![codecov](https://codecov.io/gh/PDBe-KB/component-download/branch/main/graph/badge.svg?token=4493EGB4A3)](https://codecov.io/gh/PDBe-KB/component-download)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0ea50de6bcc06953d8f4/maintainability)](https://codeclimate.com/github/PDBe-KB/component-download/maintainability)
 
-This is the repository of a lightweight Angular 6 web component that provides download functionality for coordinate files, validation reports and sequences.
+This repository is for the codebase of a lightweight Angular v6.1 web component that provides download functionality for coordinate files, validation reports and sequences.
 
-The web component is used on PDBe-KB Aggregated Views of Proteins.
+The web component is used on PDBe-KB Aggregated Views of Proteins to provide download options for coordinate files, sequences and validation reports.
 ### Example:
 
 <img src="https://raw.githubusercontent.com/PDBe-KB/component-download/main/pdbe-kb-download-component.png">
@@ -33,7 +33,7 @@ ng test
 
 ## Dependencies
 
-The main template should also have the following CSS import:
+The main template (i.e. `index.html` by default) should also have the following CSS imports:
 ```angular2html
 <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css" type="text/css" media="all"/>
 <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all"/>
@@ -42,9 +42,11 @@ The main template should also have the following CSS import:
 
 ## Basic usage
 
-The component can be added to any Angular7+ apps.
+The component can be added to any Angular v7 apps.
 
-Import the component (e.g. in app.module.ts):
+#### 1.) Import the component:
+
+Import the component in `app.module.ts` by default.
 ```
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -90,9 +92,20 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 export class AppModule { }
 ```
 
-Adding the component to a template:
+#### 2.) Add the component to a template:
 ```angular2html
 <app-download [downloadModalData]="data" [type]="type"></app-download>
+```
+
+##### Example input data
+```angular2html
+{
+  'accession':'P00001',
+  'listPdbIds': [
+    '1cbs'
+  ],
+  'type': 'similarProteins'
+}
 ```
 
 ## Versioning
